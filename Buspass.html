@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusPass Application</title>
+    
+</head>
+<body>
+    <form action="./index.html" method="get">
+    <fieldset style="width: 50%; margin: auto; border-radius: 20px; text-align: center; background-color: rgb(161, 213, 245);">
+    <img src="rtc.jpeg" alt="TG logo" width="80" height="80">
+    <h2 style="color: blue;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+    <h2>GENERAL BUS PASS APPLICATION</h2>
+    </fieldset><br>
+    <fieldset style="width: 50%; margin: auto; border-radius: 10px;" >
+        <legend style="background-color:  rgb(56, 104, 141);color: white; border-radius: 5px; height: 28px;">Applicant Details</legend>
+        <label for="name" style="margin: 5px; word-spacing: 10px; text-decoration-color: darkred;">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label style="padding: 45px;">Father's / Guardian's Name</label>
+        <input type="text" id="guardian" name="guardian" required><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <label style="padding-left: 10%;">Gender : </label>
+        Female<input type="radio" name="ajay">
+        Male<input type="radio" name="ajay"><br><br>
+        <label>Age As on : </label>
+        <input type="number">
+        <label style="padding: 45px;">Aadhaar No : </label>
+        <input type="text" required maxlength="12" pattern="[0-9]{12}"><br><br>
+        <label>WhatsApp No : </label>
+        <input type="text" required maxlength="10" pattern="[0-9]{10}">
+        <label style="padding: 60px;">Email : </label>
+        <input type="email" required><br><br>
+        <label>Photo </label>
+        <input type="file" accept="image/*" required><br><br>
+
+    </fieldset><br>
+    <fieldset style="width: 50%; margin: auto; border-radius: 10px;">
+        <legend style="background-color:  rgb(56, 104, 141);color: white; border-radius: 5px; height: 28px;">Residential Address Details</legend>
+        <label>Applicant's Address</label>
+        <textarea rows="4" cols="50" required maxlength="20" title="You have 20 Characters left"></textarea>
+        <label>District </label>
+        <select required>
+            <option value="" selected disabled>Select</option>
+            <option value="Adilabad">Adilabad</option>
+            <option value="Bhadradri Kothagudem">Bhadradri Kothagudem</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Jagtial">Jagtial</option>
+            <option value="Karimnagar">Karimnagar</option>
+            <option value="Khammam">Khammam</option>
+            <option value="Mahabubnagar">Mahabubnagar</option>
+            <option value="Medak">Medak</option>
+            <option value="Nalgonda">Nalgonda</option>
+            <option value="Nizamabad">Nizamabad</option>
+            <option value="Rangareddy">Rangareddy</option>
+            <option value="Warangal">Warangal</option>
+        </select><br><br>
+        <label>Mandal : </label>
+        <select required>
+            <option value="" selected disabled>Select</option>  
+            <option value="Mandal1">Mandal1</option>
+            <option value="Mandal2">Mandal2</option>        
+        </select>
+        <label style="padding-inline-start: 25%;">Village : </label>
+        <select required >
+            <option value="" selected disabled>Select</option>  
+            <option value="Village1">Village1</option>
+            <option value="Village2">Village2</option>  
+        </select><br><br>
+        <label>Pincode : </label>
+        <input type="text" required maxlength="6" pattern="[0-9]{6}">
+    </fieldset><br>
+    <fieldset style="width: 50%; margin: auto; border-radius: 10px;" >
+        <legend style="background-color:  rgb(56, 104, 141);color: white; border-radius: 5px; height: 28px;">Pass Type Details</legend>
+        <label>City</label>
+        <select required>
+            <option value="" selected disabled>Select</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Warangal">Warangal</option>
+            <option value="Karimnagar">Karimnagar</option>
+        </select><br><br>
+        <label>Pass Type</label>
+        <select required>
+            <option value="GREATER PASS">GREATER PASS</option>
+            <option value="GENERAL ORDINARY ROUTE PASS MTLY">GENERAL ORDINARY ROUTE PASS MTLY</option>
+            <option value="GENERAL METRO EXPRESS ROUTE PASS MLTY">GENERAL METRO EXPRESS ROUTE PASS MLTY</option>
+            <option value="ORDINARY PASS">ORDINARY PASS</option>
+            <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+            <option value="METRO DELUXE PASS">METRO DELUXE PASS</option>
+            <option selected disabled>---Select---</option>
+            
+        </select>
+    </fieldset><br>
+    <fieldset style="width: 50%; margin: auto; border-radius: 10px;">
+        <legend style="background-color: rgb(56, 104, 141);color: white; border-radius: 5px; height: 28px;">Mode of Payment & Pass Collection</legend>
+        <label>Payment Mode </label>
+        <select required>
+            <option value="Select Payment Mode">Select Payment Mode</option>
+            <option value="Payment at Counter">Payment at Counter</option>
+            
+        </select><br><br>
+        <label>Pass Delivery Mode</label>
+        <select required>
+            <option value="Select Pass Delivery Mode">Select Pass Delivery Mode</option>
+            <option value="At Counter">At Counter</option>
+        </select><br><br>
+        <label>Center at which you want to Collect Pass</label>
+        <select required>
+            <option value="Select Center">Select Center</option>
+            <option value="RTC Bus Station Hyderabad">RTC Bus Station Hyderabad</option>
+            <option value="RTC Bus Station Warangal">RTC Bus Station Warangal</option>
+            <option value="RTC Bus Station Karimnagar">RTC Bus Station Karimnagar</option>
+        </select>
+    </fieldset><br><br>
+    <img src="./captcha.png" alt="captcha image" width="150" height="50" style="margin-left: 45%;">
+    <img src="https://icons.veryicon.com/png/o/miscellaneous/basic-monochrome-icon/refresh-149.png" alt="refresh captcha" width="40" height="40">
+    <br><br>
+    <input type="text" required style="margin-left: 45%;"><br><br>
+    <button value="Submit" style="margin-left: 48%; background-color: lightcoral; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; -ms-text-size-adjust: 0%;">Submit</button>
+    </form>
+</body>
+</html>
